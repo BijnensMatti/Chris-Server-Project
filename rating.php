@@ -9,7 +9,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sql1 = "SELECT rating FROM AFRRanks WHERE userid=" . $userid . " ORDER BY datetime DESC LIMIT 1";
+$sql1 = "SELECT rating FROM ranks WHERE userid=" . $userid . " ORDER BY datetime DESC LIMIT 1";
 $result = mysqli_query($conn, $sql1);
 
 // All good?
