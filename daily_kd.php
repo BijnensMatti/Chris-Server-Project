@@ -29,14 +29,14 @@ $winsy = $obj[1]["ranked_wins"];
 $losst = $obj[0]["ranked_losses"];
 $lossy = $obj[1]["ranked_losses"];
 } else if ($mode=="casual"){
-$killst = $obj[0]["casual_kills"] ;
-$deathst = $obj[0]["casual_deaths"];
-$killsy = $obj[1]["casual_kills_y"];
-$deathsy = $obj[1]["casual_deaths_y"]; 
-$winst = $obj[0]["casual_wins"];
-$winsy = $obj[1]["casual_wins"];
-$losst = $obj[0]["casual_losses"];
-$lossy = $obj[1]["casual_losses"];
+$killst = 0;
+$deathst = 0;
+$killsy = 0;
+$deathsy = 0; 
+$winst = 0;
+$winsy = 0;
+$losst = 0;
+$lossy = 0;
 }
 $todaywins = $winst-$winsy;
 $todaylosses = $losst-$lossy;
